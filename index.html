@@ -4,41 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Samyak Rastogi Bootstrap-1</title>
     <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> 
 </head>
-<body>
+<body style="background-color:rgb(182, 238, 186);">
+
     <div class="container overflow-hidden">
         <div class="row gy-5">
           <div class="col-6">
-            <div class="p-3 border bg-light text-center">FORM</div>
+            <div class="p-3 border bg-dark text-center text-light fs-2">FORM</div>
           </div>
           <div class="col-6">
-            <div class="p-3 border bg-light text-center">TABLE</div>
+            <div class="p-3 border bg-dark text-center text-white fs-2">TABLE</div>
           </div>
           <div class="col-6">
-            <div class="p-3 border bg-light"><form>
+            <div  style="background-color: rgb(234, 186, 221);" class="p-3 border"><form>
                 <div class="mb-3">
-                  <label for="exampleInputName" class="form-label">Father's Name</label>
+                  <label for="exampleInputName" class="form-label fs-4">Father's Name</label>
                   <input type="name" class="form-control" placeholder="">
                  </div>
                  <div class="mb-3">
-                    <label for="exampleInputName" class="form-label">Mother's Name</label>
+                    <label for="exampleInputName" class="form-label fs-4">Mother's Name</label>
                     <input type="name" class="form-control" placeholder="">
                    </div>
                    <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Phone Number</label>
+                    <label for="exampleInputNumber" class="form-label fs-4">Phone Number</label>
                     <input type="name" class="form-control" placeholder="017xxxxxxx">
                    </div>
                  <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email</label>
+                    <label for="exampleInputEmail1" class="form-label fs-4">Email</label>
                     <input type="email" class="form-control" placeholder="sample@example.com">
                    </div>
                    <div class="mb-3">
-                    <label for="exampleInputGender" class="form-label">Gender</label>
+                    <label for="exampleInputGender" class="form-label fs-4">Gender</label>
                     <br>
                     <div class="form-check form-check-inline">
                         <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
@@ -54,33 +55,96 @@
                       </div>
                    </div>
                    <div class="mb-3">
-                    <label for="exampleInputDateOfBirth" class="form-label">Date Of Birth</label>
+                    <label for="exampleInputDateOfBirth" class="form-label fs-4">Date Of Birth</label>
                     <input type="date" class="form-control" placeholder="">
                    </div>
                    <div class="mb-3">
-                    <label for="exampleInputAddress" class="form-label">Address</label>
+                    <label for="exampleInputAddress" class="form-label fs-4">Address</label>
                     <input type="address" class="form-control" placeholder="Street:- House:- Road:-">
                    </div>
                    <div class="mb-3">
-                    <label for="exampleInputBloodGroup" class="form-label">Blood Group</label>
-                    <input type="dropdown" class="form-control" placeholder="">
+                    <label for="exampleInputBloodGroup" class="form-label fs-4">Blood Group</label>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                          Select
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                          <li><button class="dropdown-item" type="button">A+</button></li>
+                          <li><button class="dropdown-item" type="button">A-</button></li>
+                          <li><button class="dropdown-item" type="button">B+</button></li>
+                          <li><button class="dropdown-item" type="button">B-</button></li>
+                          <li><button class="dropdown-item" type="button">O+</button></li>
+                          <li><button class="dropdown-item" type="button">O-</button></li>
+                          <li><button class="dropdown-item" type="button">AB+</button></li>
+                          <li><button class="dropdown-item" type="button">AB-</button></li>     
+                        </ul>
+                      </div>
                    </div>
-            
 
-                <div class="mb-3">
-                  <label for="exampleInputPassword1" class="form-label"></label>
-                  <input type="password" class="form-control" id="exampleInputPassword1">
-                </div>
-                <div class="mb-3 form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-              </form></div>
+                   <div class="mb-3">
+                    <label for="exampleInputGender" class="form-label fs-4">Department</label>
+                    <br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        <label class="form-check-label " for="inlineRadio1">CSE</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        <label class="form-check-label" for="inlineRadio2">EEE</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                        <label class="form-check-label" for="inlineRadio3">BBA</label>
+                      </div>
+                   </div>
+
+                   <div class="mb-3">
+                    <label for="exampleInputGender" class="form-label fs-4">Course</label>
+                    <br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">C</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option2">
+                        <label class="form-check-label" for="inlineCheckbox1">C++</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option3">
+                        <label class="form-check-label" for="inlineCheckbox1">JAVA</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option4">
+                        <label class="form-check-label" for="inlineCheckbox1">AI</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option5">
+                        <label class="form-check-label" for="inlineCheckbox1">ML</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option6">
+                        <label class="form-check-label" for="inlineCheckbox1">Robotics</label>
+                      </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <label for="inputFile" class="col-sm-2 col-form-label fs-4">Photo</label>
+                        
+                        <div class="col-sm-6">
+                            <input class="form-control form-control-lg" id="formFileLg" type="file">
+                            
+                        </div>
+                    </div>
+ 
+                 
+                <button type="submit" class="btn btn-primary bg-success">Submit</button>
+                <button type="reset" class="btn btn-primary bg-danger">Reset</button>
+
+            </form></div>
           </div>
           <div class="col-6">
             <div class="p-3 border bg-light">
-                <table class="table table-success table-striped">
+                <table class="table table-primary table-striped">
                     <thead>
                       <tr>
                         <th scope="col">SNo.</th>
